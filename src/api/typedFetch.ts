@@ -18,7 +18,7 @@ export async function typedFetch<T>(
   try {
     const response = await fetch(url, options);
 
-    if (!response.ok) {
+    if (!response.ok && response.status != null) {
       return {
         ok: false,
         status: response.status,

@@ -1,10 +1,9 @@
-import { useState } from 'react'
 import './App.css'
 import { UserList } from './components/user-list'
 import { PostList } from './components/post-list'
+import { SearchDemo } from './components/search-demo'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <div
@@ -29,7 +28,12 @@ function App() {
         }}
       >
         User and Post Listings With Filter
-      </h1>      
+      </h1>
+      <div
+        style={{width: '100%'}}
+      >
+        <SearchDemo />
+      </div>
       <div
         style={{width: '100%'}}
       >
